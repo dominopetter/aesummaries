@@ -8,12 +8,12 @@
 #'
 #' @return No return value, called to run the application.
 run_app <- function(
-    ...) {
-  with_golem_options(
-    app = shinyApp(
-      ui = app_ui,
-      server = app_server
-    ),
-    golem_opts = list(...)
-  )
+   ...) {
+ with_golem_options(
+   app = shinyApp(
+     ui = app_ui,
+     server = app_server
+   ),
+   golem_opts = list(...)
+ )
 }
